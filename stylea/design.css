@@ -40,14 +40,16 @@
 
 
 .bg-grad {
-  background: linear-gradient(purple, pink, yellow);
-  height: 300px;
-  width: 300px;
+  background: url(../stylea/hero-circle.png);
+  height: 350px;
+  width: 350px;
   position: relative;
-  left: 650px;
+  left: 620px;
   top: 100px;
-  border-radius: 50%;
+
 }
+
+
 
 .mic-img {
   margin-left: 625px;
@@ -79,8 +81,8 @@
   width: 75px;
   border-radius: 20px;
   position: relative;
-  top: -570px;
-  left: 850px;
+  top: -600px;
+  left: 900px;
   text-align: center;
 }
 
@@ -256,7 +258,7 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  position: relative;
+
   top: 100px;
   background-color: #250D44;
   width: 380px;
@@ -264,6 +266,14 @@ hr {
   border-radius: 10%;
   position: relative;
   left: 100px;
+
+}
+
+#feature .card {
+  ackground-color: #250D44;
+  width: 380px;
+  height: 450px;
+  border-radius: 10%;
 }
 
 .epi {
@@ -413,19 +423,31 @@ hr {
   #banner {
     width: 576px;
     display: flex;
-    justify-content: center;
 
+  }
+
+  #banner .mic-img {
+    position: relative;
+    left: -400px;
+  }
+
+  #banner .bg-grad {
+    position: relative;
+    right: 50px;
+    height: 350px;
+    width: 350px;
+  }
+
+  #banner .translate {
+    position: relative;
+    right: 50px;
+    height: 350px;
+    width: 350px;
   }
 
   #banner h3,
   p {
     font-size: 30px;
-  }
-
-
-  #banner .translate {
-    width: 576px;
-    align-items: center;
   }
 
   #about {
@@ -439,16 +461,20 @@ hr {
 
   #why {
     width: 576px;
-
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr);*/
+    align-items: center;
+    font-size: 16px;
   }
 
-  #why .head {
-    font-size: 16px;
+  #sidebar .boxs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   #feature {
     width: 576px;
-    
+
   }
 
   #feature .all-card {
@@ -464,5 +490,7 @@ hr {
 
   #last {
     width: 576px;
+
+
   }
 }
