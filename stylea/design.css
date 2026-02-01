@@ -3,6 +3,10 @@
   font-optical-sizing: auto;
 }
 
+#nav {
+  width: 1600px;
+}
+
 .nav-ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -14,12 +18,17 @@
 
 }
 
-
+#banner {
+  width: 1600px;
+}
 
 .btn {
   margin-top: 24px;
   margin-right: 200px;
+
 }
+
+
 
 .image-bg {
   background: url(../stylea/hero-bg.png);
@@ -50,6 +59,10 @@
   left: 50px;
 }
 
+#about {
+  width: 1600px;
+}
+
 .headline h3 {
   color: white;
   font-size: 60px;
@@ -60,7 +73,7 @@
 
 }
 
-.badge h5 {
+.translate h5 {
   color: black;
   background-color: #00FF88;
   width: 75px;
@@ -87,6 +100,12 @@
   position: relative;
   top: -250px;
   color: white;
+  cursor: pointer;
+
+}
+
+.joint-btn:hover {
+  color: red;
 }
 
 .btn-subs {
@@ -94,24 +113,26 @@
   border-radius: 20%;
   width: 147px;
   height: 44px;
-
+  align-items: center;
+  cursor: pointer;
 }
 
-.about {
+
+#about {
   background-color: #1A0B2E;
   position: relative;
   top: -120px;
   height: 646px;
 }
 
-.about h3 {
+#about h3 {
   color: white;
   font-size: 48px;
   font-weight: bold;
   text-align: center;
 }
 
-.about p {
+#about p {
   color: #FFFFFF;
   font-size: 16px;
   text-align: center;
@@ -222,7 +243,7 @@ hr {
   top: -500px;
 }
 
-.feature {
+#feature {
   position: relative;
   background-color: #1A0B2E;
   width: 1600px;
@@ -273,7 +294,7 @@ hr {
 }
 
 
-.feature h2 {
+#feature h2 {
   color: white;
   font-size: 48px;
   text-align: center;
@@ -360,4 +381,88 @@ hr {
   display: flex;
   color: white;
   gap: 10px;
+}
+
+.translate {
+  transition: transform 1s, translate;
+}
+
+.translate:hover {
+  transform: rotate(60deg);
+}
+
+@media screen and (max-width:576px) {
+
+  #nav,
+  #banner,
+  #about,
+  #why,
+  #feature,
+  #last {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);*/
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nav {
+    width: 576px;
+  }
+
+  #banner {
+    width: 576px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  #banner h3,
+  p {
+    font-size: 30px;
+  }
+
+
+  #banner .translate {
+    width: 576px;
+    align-items: center;
+  }
+
+  #about {
+    width: 576px;
+  }
+
+  #about .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #why {
+    width: 576px;
+
+  }
+
+  #why .head {
+    font-size: 16px;
+  }
+
+  #feature {
+    width: 576px;
+    
+  }
+
+  #feature .all-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  #feature .another {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #last {
+    width: 576px;
+  }
 }
